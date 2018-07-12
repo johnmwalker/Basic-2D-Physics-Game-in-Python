@@ -42,6 +42,9 @@ GREEN    = (   0, 255,   0)
 RED      = ( 255,   0,   0)
 
 # Choose the "level" (defines starting conditions)
+# Level 1: Standard game layout. Several planets (one of them has a tiny moon!)
+# Level 2: Roughly to-scale-ish solar system
+# Level 3: Planet sandbox to demonstrate collisions
 level=1
 
 class App(object):
