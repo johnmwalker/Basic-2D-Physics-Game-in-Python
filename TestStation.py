@@ -1,17 +1,37 @@
-# -*- coding: utf-8 -*-
 """
 Created on Tue Mar 08 15:50:22 2016
 
-@author: John
-
 This is the final draft of the game I made for PHYS 398 in Spring 2016
+(sophomore year). I have not bothered to update it much since then. See other 
+projects for better coding.
+
+Goal of game: 
+    Suck the energy out of the planets to make them fall into the black hole.
+    You'll lose if you fall in yourself.
+
+Controls: 
+    Numpad + and - speed up and slow down the simulation
+    > and < (. and ,) are "cheats" to give your thruster more power.
+    Spacebar activates the "energy sucking" function. Planets in the crosshairs
+        will slow down.
+    Arrow keys control motion of ship.
+    
+Issues:
+    I couldn't figure out how to fix the rotation animation of the ship, so it
+    doesn't really rotate about the center of the image. I think this may have
+    been due to a bug in PyGame.
+    
+    Collisions were poorly implemented. For some reason I decided to use trig
+    to calculate forces. Later projects built on this code use vectors for
+    greatly improved accuracy.
+    
+    This was my first big project, so many coding conventions were likely
+    ignored.
 """
 import Physics
 import Simulation
 import Solver
 import numpy as np
-import math
-import matplotlib.pyplot as plt
 import StopConditions
 import pygame as pg
 
@@ -21,6 +41,10 @@ WHITE    = ( 255, 255, 255)
 GREEN    = (   0, 255,   0)
 RED      = ( 255,   0,   0)
 
+# Choose the "level" (defines starting conditions)
+# Level 1: Standard game layout. Several planets (one of them has a tiny moon!)
+# Level 2: Roughly to-scale-ish solar system
+# Level 3: Planet sandbox to demonstrate collisions
 level=1
 
 class App(object):
@@ -733,7 +757,7 @@ class App(object):
             elif self.win == True:
                 self.n+=1
                 if self.n==1:
-                    self.frogs.play()
+#                    self.frogs.play()
                     self.screen.blit(self.winScreen,(0,0))
                     pg.display.update()
                     
