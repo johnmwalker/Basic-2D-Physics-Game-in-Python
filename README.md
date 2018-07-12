@@ -4,6 +4,8 @@ This is the final draft of the game I made for PHYS 398 in Spring 2016
 (sophomore year). I have not bothered to update it much since then. See other 
 projects for better coding.
 
+To play, run the poorly-named TestStation.py file.
+
 Requires:
 
 PyGame
