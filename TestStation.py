@@ -757,7 +757,7 @@ class App(object):
             elif self.win == True:
                 self.n+=1
                 if self.n==1:
-                    self.frogs.play()
+#                    self.frogs.play()
                     self.screen.blit(self.winScreen,(0,0))
                     pg.display.update()
                     
