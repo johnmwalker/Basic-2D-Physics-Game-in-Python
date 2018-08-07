@@ -6,30 +6,30 @@ projects for better coding.
 
 To play, run the poorly-named TestStation.py file.
 
-#Requires:
+# Requires:
 
 * Numpy
 * PyGame
 
-#Features: 
+# Features: 
 
 * N-body gravity
 * Basic collisions
 * RK4 Solver
 
-#Goal of game: 
+# Goal of game: 
 
 Suck the energy out of the planets to make them fall into the black hole.
 You'll lose if you fall in yourself.
 
-#Controls: 
+# Controls: 
 
 * Numpad + and - speed up and slow down the simulation.
 * ">" and "<" (. and ,) are "cheats" to give your thruster more power.
 * Spacebar activates the "energy sucking" function. Planets in the crosshairs will slow down.
 * Arrow keys control motion of ship.
     
-#Issues:
+# Issues:
 
 I couldn't figure out how to fix the rotation animation of the ship, so it
 doesn't really rotate about the center of the image. I think this may have
