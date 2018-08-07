@@ -24,7 +24,7 @@ You'll lose if you fall in yourself.
 Controls: 
 
 Numpad + and - speed up and slow down the simulation.
-> and < (. and ,) are "cheats" to give your thruster more power.
+">" and "<" (. and ,) are "cheats" to give your thruster more power.
 Spacebar activates the "energy sucking" function. Planets in the crosshairs will slow down.
 Arrow keys control motion of ship.
     
