@@ -10,6 +10,7 @@ To play, run the poorly-named TestStation.py file.
 
 * Numpy
 * PyGame
+Note: This Project do not require a lot of knowledge about Pygame or Numpy, it can also be done with beginner level knowledge on these Modules.
 
 ### Features: 
 
